@@ -1,2 +1,2 @@
 # BicicletaComRodinhas
-Repositorio publico para aprendizado
+Repositorio publico para fins de aprendizado
