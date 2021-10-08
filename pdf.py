@@ -22,6 +22,6 @@ def GeneratePDF(lista):
     except :
         print('Erro ao gerar {}.pdf'.format(nome_pdf))
 
-lista = {'Manual de instalação do UltraStudio': '04/10/2021'}
+lista = {'ESCREVA SEU ASSUNTO': '04/10/2021'}
 
 GeneratePDF(lista)
