@@ -1,10 +1,10 @@
 import random
 from tkinter import *
 
+
 class DiceRoller(object):
 
-
-    def __init_(self, master):
+    def __init__(self, master):
         frame = Frame(master)
         frame.pack()
         self.label = Label(master, font=("times", 200))
@@ -13,7 +13,8 @@ class DiceRoller(object):
 
     def roll(self):
         symbols = ["\u2680", "\u2681", "\u2682", "\u2683", "\u2684", "\u2685"]
-        self.label.config(text=f"{random.choice(symbols)}{random.choice(symbols)}")
+        self.label.config(
+            text=f"{random.choice(symbols)}{random.choice(symbols)}")
         self.label.pack()
 
 
@@ -23,5 +24,3 @@ if __name__ == "__main__":
     root.geometry("500x300")
     DiceRoller(root)
     root.mainloop()
-    
-
