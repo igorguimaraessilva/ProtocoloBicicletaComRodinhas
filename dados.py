@@ -16,6 +16,12 @@ class DiceRoller(object):
         self.label.config(
             text=f"{random.choice(symbols)}{random.choice(symbols)}")
         self.label.pack()
+   
+    def n(sides):
+        return randint(1, sides)
+
+    def roll(n, sides):
+        return tuple(n(sides) for _ in range(n))
 
 
 if __name__ == "__main__":
@@ -24,3 +30,6 @@ if __name__ == "__main__":
     root.geometry("500x300")
     DiceRoller(root)
     root.mainloop()
+    dice = roll(2, 20)
+print(dice, sum(dice))
+# (20, 18, 1) 39
