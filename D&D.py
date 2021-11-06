@@ -63,6 +63,7 @@ def set_player_name():
     print("A pontuação nos dados de 4 lados e arredondada para baixo.")
     print("Então repetimos o processo para os atibutos de cada personagem")
     str(set_player_1_ski())
+
 # definir o nome do jogador 1 e definir a habilidade
 
 
@@ -85,6 +86,7 @@ def set_player_1_ski():
     else:
         print("invalid input")
         str(set_player_1_ski())
+
 # definir força do jogador 1
 
 
@@ -108,4 +110,5 @@ def set_player_1_str():
     else:
         print("invalid input")
         str(set_player_1_str())
+
 # definir habilidade do jogador2
