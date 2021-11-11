@@ -34,7 +34,7 @@ def data_test():
         Q2 = (input("pressione S ou N e digite a resposta respeitada"))
         if Q2 == ("S") or Q2 == ("s"):
             print("Carregando...")
-            str(laod_palyer_data())
+            str(load_player_data())
         elif Q2 == ("N") or Q2 == ("n"):
             print("ok Prosseguindo para inserir manualmente os dados do jogador ")
             str(set_player_name())
@@ -112,3 +112,37 @@ def set_player_1_str():
         str(set_player_1_str())
 
 # definir habilidade do jogador2
+
+
+def set_player_2_ski():
+    print("")
+    global name2
+    global ski2
+    print((name2)+("Agora é a sua vez de rolar os dados"))
+    Q5 = input("Pressione 'R' para lançar os dados e determinar sua 'SKILL'")
+    if Q5 == ("r") or Q5 == ("R"):
+        roll12 = random.randint(1, 12)
+        roll4 = random.randint(1, 4)
+        print("O d12 rolou: ")
+        print(roll12)
+        print("e o d4 rolou: ")
+        print(roll4)
+        print("Niceee, essa é sua Skill:")
+        ski2 = math.floor(((roll12)/(roll4))+(ski2))
+        print(ski2)
+        print("Pressione 'R' para descobrir sua FORÇA")
+        str(set_player_2_str())
+    else:
+        print("invalid input")
+        str(set_player_2_ski())
+# definir força do player2
+
+
+def set_player_2_str():
+    print("")
+    global name2
+    global ski2
+    roll12 = random.randint(1, 12)
+    roll4 = random.randint(1, 4)
+    Q6 = input("Pressione R para rolar os dados e determinar sua FORÇA")
+    if Q6 == ("r") or Q6 == ("R")
