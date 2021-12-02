@@ -89,3 +89,4 @@ modelo = Model()
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 modelo.to(device)
+
